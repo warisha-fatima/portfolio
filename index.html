@@ -494,9 +494,24 @@
             p, .hero-description, .card p, .project-card p {
     text-align: justify;
 }
-            /* Force text justify on mobile */
+           /* Force text justify on mobile - STRONGER VERSION */
 @media (max-width: 768px) {
-    p, .hero-description, .card p, .about-text, .project-card p, .education-item p, .hero-content p {
+    p, 
+    .hero-description, 
+    .card p, 
+    .about-text, 
+    .project-card p, 
+    .education-item p, 
+    .hero-content p,
+    .card,
+    [class*="card"] p,
+    [id*="about"] p,
+    [id*="description"] p {
+        text-align: justify !important;
+    }
+    
+    /* Also target all paragraphs inside cards */
+    .card * p, .project-card * p {
         text-align: justify !important;
     }
 }
