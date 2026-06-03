@@ -447,7 +447,7 @@
             }
             
             .hero-content p {
-                text-align: center;
+                text-align: justify;
             }
             
             .profile-circle {
@@ -475,43 +475,27 @@
             }
             
             .card p {
-                text-align: center;
+                text-align: justify;
             }
             
             .education-item p {
-                text-align: center;
+                text-align: justify;
             }
             
             .project-card p {
-                text-align: center;
+                text-align: justify;
             }
         }
 
-        @media (min-width: 769px) {
-            .nav-links {
-                display: flex !important;
-            }
-            p, .hero-description, .card p, .project-card p {
-    text-align: justify;
-}
-           /* Force text justify on mobile - STRONGER VERSION */
-@media (max-width: 768px) {
-    p, 
-    .hero-description, 
-    .card p, 
-    .about-text, 
-    .project-card p, 
-    .education-item p, 
-    .hero-content p,
-    .card,
-    [class*="card"] p,
-    [id*="about"] p,
-    [id*="description"] p {
-        text-align: justify !important;
+     @media (min-width: 769px) {
+    .nav-links {
+        display: flex !important;
     }
-    
-    /* Also target all paragraphs inside cards */
-    .card * p, .project-card * p {
+}
+
+/* Force justify on ALL text on mobile */
+@media (max-width: 768px) {
+    body, .container, .hero, .card, section, div, .hero-description, .card p, .hero-content p, .about-text, .project-card p, .education-item p, .card p, p {
         text-align: justify !important;
     }
 }
