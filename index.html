@@ -494,6 +494,12 @@
             p, .hero-description, .card p, .project-card p {
     text-align: justify;
 }
+            /* Force text justify on mobile */
+@media (max-width: 768px) {
+    p, .hero-description, .card p, .about-text, .project-card p, .education-item p, .hero-content p {
+        text-align: justify !important;
+    }
+}
         }
     </style>
 </head>
