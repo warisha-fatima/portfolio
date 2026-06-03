@@ -493,9 +493,9 @@
     }
 }
 
-/* Force justify on ALL text on mobile */
+/* Justify ONLY paragraphs on mobile - NOT headings */
 @media (max-width: 768px) {
-    body, .container, .hero, .card, section, div, .hero-description, .card p, .hero-content p, .about-text, .project-card p, .education-item p, .card p, p {
+    p, .card p, .project-card p, .education-item p, .hero-content p, .about-text p {
         text-align: justify !important;
     }
 }
